@@ -35,45 +35,11 @@ public class BioUnit implements VoiceLines {
         this.health = health;
     }
 
-    public int getRange() {
-        return range;
-    }
 
-    public void setRange(int range) {
-        this.range = range;
-    }
-
-    public int getMineralCost() {
-        return mineralCost;
-    }
-
-    public void setMineralCost(int mineralCost) {
-        this.mineralCost = mineralCost;
-    }
-
-    public int getGasCost() {
-        return gasCost;
-    }
-
-    public void setGasCost(int gasCost) {
-        this.gasCost = gasCost;
-    }
-
-    public int getOffenseUpgrade() {
-        return offenseUpgrade;
-    }
-
-    public void setOffenseUpgrade(int offenseUpgrade) {
-        this.offenseUpgrade = offenseUpgrade;
-    }
-
-    public int getDefenseUpgrade() {
-        return defenseUpgrade;
-    }
-
-    public void setDefenseUpgrade(int defenseUpgrade) {
-        this.defenseUpgrade = defenseUpgrade;
-    }
+    /**
+     * Methods from VoiceLines interface
+     * @return to be determined by the specific object
+     */
 
     @Override
     public String enterPlay() {
@@ -81,17 +47,17 @@ public class BioUnit implements VoiceLines {
     }
 
     @Override
-    public String moveOne() {
-        return null;
-    }
-
-    @Override
-    public String moveTwo() {
+    public String move() {
         return null;
     }
 
     @Override
     public String underAttack() {
+        return null;
+    }
+
+    @Override
+    public String attackEnemy() {
         return null;
     }
 }
